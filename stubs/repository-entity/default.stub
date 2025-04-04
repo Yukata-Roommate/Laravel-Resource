@@ -1,0 +1,25 @@
+<?php
+
+namespace {{ NameSpace }};
+
+use YukataRm\Laravel\Repository\Entity\BaseEntity;
+
+use YukataRm\Laravel\Repository\Interfaces\EntityInterface;
+
+use Carbon\Carbon;
+
+/**
+ * {{ Comment }}
+ */
+class {{ NameUpper }}Entity extends BaseEntity implements EntityInterface
+{
+    /**
+     * bind Model properties
+     *
+     * @return void
+     */
+    protected function bind(): void
+    {
+        // ...
+    }
+}

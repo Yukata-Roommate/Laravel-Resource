@@ -1,0 +1,40 @@
+<?php
+
+namespace {{ NameSpace }};
+
+use YukataRm\Laravel\Resource\Request\UpdateRequest as BaseRequest;
+use YukataRm\Laravel\Validation\Facades\Rules;
+
+use {{ RequestEntityClassName }} as Entity;
+
+/**
+ * {{ Comment }}
+ */
+class {{ NameUpper }}Request extends BaseRequest
+{
+    /**
+     * table name
+     *
+     * @var string
+     */
+    protected string $tableName = "{{ TableName }}";
+
+    /**
+     * entity class
+     *
+     * @var string
+     */
+    protected string $entity = Entity::class;
+
+    /**
+     * get Validation Rules array
+     *
+     * @return array<\YukataRm\Laravel\Validation\Interfaces\Rules\ValidationRulesInterface>
+     */
+    protected function validations(): array
+    {
+        return [
+            // ...
+        ];
+    }
+}

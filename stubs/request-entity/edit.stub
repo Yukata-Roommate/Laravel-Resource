@@ -1,0 +1,10 @@
+<?php
+
+namespace {{ NameSpace }};
+
+use YukataRm\Laravel\Resource\Request\Entity\EditEntity as BaseEntity;
+
+/**
+ * {{ Comment }}
+ */
+class {{ NameUpper }}Entity extends BaseEntity {}

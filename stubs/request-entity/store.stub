@@ -1,0 +1,21 @@
+<?php
+
+namespace {{ NameSpace }};
+
+use YukataRm\Laravel\Resource\Request\Entity\StoreEntity as BaseEntity;
+
+/**
+ * {{ Comment }}
+ */
+class {{ NameUpper }}Entity extends BaseEntity
+{
+    /**
+     * bind property
+     *
+     * @return void
+     */
+    public function bind(): void
+    {
+        // ...
+    }
+}
