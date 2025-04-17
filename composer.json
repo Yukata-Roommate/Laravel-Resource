@@ -1,0 +1,43 @@
+{
+    "name": "yukata-roommate/laravel-resource",
+    "description": "Easy to develop with Laravel",
+    "version": "1.0.0",
+    "keywords": [
+        "yukata-roommate",
+        "php",
+        "laravel",
+        "package",
+        "resource",
+        "laravel-resource"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yukata Roommate"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "YukataRm\\Laravel\\Resource\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YukataRm\\Laravel\\Resource\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=8.3.0",
+        "laravel/framework": "^11.0 || ^12.0",
+        "yukata-roommate/laravel-db": "^1.0.0",
+        "yukata-roommate/laravel-request": "^1.0.0",
+        "yukata-roommate/laravel-validation": "^1.0.0",
+        "yukata-roommate/laravel-repository": "^1.0.0",
+        "yukata-roommate/laravel-service": "^1.0.0",
+        "yukata-roommate/laravel-frontend": "^1.0.0",
+        "yukata-roommate/laravel-command": "^1.0.0",
+        "yukata-roommate/text": "^1.0.0"
+    }
+}

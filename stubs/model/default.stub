@@ -1,0 +1,44 @@
+<?php
+
+namespace {{ NameSpace }};
+
+use YukataRm\Laravel\Repository\Model\EntityModel;
+
+use {{ RepositoryEntityClassName }} as Entity;
+
+/**
+ * {{ Comment }}
+ */
+class {{ NameUpper }} extends EntityModel
+{
+    /**
+     * table name
+     *
+     * @var string
+     */
+    protected $table = "{{ TableName }}";
+
+    /**
+     * Get the attributes that should be cast.
+     *
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return [];
+    }
+
+    /*----------------------------------------*
+     * Entity
+     *----------------------------------------*/
+
+    /**
+     * convert to Entity
+     *
+     * @return \{{ RepositoryEntityClassName }}
+     */
+    public function toEntity(): Entity
+    {
+        return new Entity($this);
+    }
+}

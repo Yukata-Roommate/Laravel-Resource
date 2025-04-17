@@ -1,0 +1,30 @@
+<?php
+
+namespace YukataRm\Laravel\Resource\Commands\Creators;
+
+use YukataRm\Laravel\Resource\Commands\Creators\Base\ResourceCreator;
+
+/**
+ * Model Creator
+ *
+ * @package YukataRm\Laravel\Resource\Commands\Creators
+ */
+class ModelCreator extends ResourceCreator
+{
+    /**
+     * base file directory
+     *
+     * @return string
+     */
+    protected function baseDirectory(): string
+    {
+        return app_path("Models");
+    }
+
+    /**
+     * base file name
+     *
+     * @var string
+     */
+    protected string $baseName = "";
+}
